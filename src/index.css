@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+* {
+  font-family: "Jost", sans-serif;
+}
+
+.navbar > a {
+  font-family: jost, sans-serif;
+}
+
+.section {
+  padding-inline: 5rem;
+}
+
+@media (width <= 790px) {
+  .section {
+    padding: 0 1.5rem !important;
+  }
+}

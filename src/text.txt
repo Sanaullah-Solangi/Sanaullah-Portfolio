@@ -1,0 +1,35 @@
+ {/* <a
+            onclick={setIconsVisibility(iconsVisibility ? false : true)}
+            className="capitalize h-full sm:h-[50%] sm:w-full flex justify-center items-center py-0 px-[2rem] text-[2rem] sm:text-[2.5rem] md:text-[1.6rem] hover:bg-[#d7d7d7] md:px-[1rem]  "
+            href="#home"
+          >
+            home
+          </a>
+          <a
+            onclick={setIconsVisibility(iconsVisibility ? false : true)}
+            className="capitalize h-full sm:h-[50%] sm:w-full flex justify-center items-center py-0 px-[2rem] text-[2rem] sm:text-[2.5rem] md:text-[1.6rem] hover:bg-[#d7d7d7] md:px-[1rem]  "
+            href="#about"
+          >
+            about
+          </a>
+          <a
+            onclick={setIconsVisibility(iconsVisibility ? false : true)}
+            className="capitalize h-full sm:h-[50%] sm:w-full flex justify-center items-center py-0 px-[2rem] text-[2rem] sm:text-[2.5rem] md:text-[1.6rem] hover:bg-[#d7d7d7] md:px-[1rem]  "
+            href="#services"
+          >
+            services
+          </a>
+          <a
+            onclick={setIconsVisibility(iconsVisibility ? false : true)}
+            className="capitalize h-full sm:h-[50%] sm:w-full flex justify-center items-center py-0 px-[2rem] text-[2rem] sm:text-[2.5rem] md:text-[1.6rem] hover:bg-[#d7d7d7] md:px-[1rem]  "
+            href="#portfolio"
+          >
+            portfolio
+          </a>
+          <a
+            onclick={setIconsVisibility(iconsVisibility ? false : true)}
+            className="capitalize h-full sm:h-[50%] sm:w-full flex justify-center items-center py-0 px-[2rem] text-[2rem] sm:text-[2.5rem] md:text-[1.6rem] hover:bg-[#d7d7d7] md:px-[1rem]  "
+            href="#contact"
+          >
+            contact
+          </a> */}
