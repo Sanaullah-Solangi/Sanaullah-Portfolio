@@ -5,17 +5,17 @@ function Hero() {
   const { iconBorder, bgColor, gradient, helper } = useContext(ThemeContext);
   return (
     <main id="home" className="section">
-      <div className="grid grid-cols-1 lg:grid-cols-2 h-[90vh] w-full">
+      <div className="grid grid-cols-1 lg:grid-cols-2  w-full">
         {/* HOME CONTENT */}
         <div className="home-content text-center lg:text-left">
           <p className="greetings text-[1rem] capitalize ]">hello it's me</p>
-          <h1 className="font-[500] text-5xl mb-[.5rem] mt-[1.2rem] capitalize">
+          <h1 className="font-[600] text-5xl  capitalize">
             Muhammad Sanaullah
           </h1>
           <p className="font-[600] text-[1.2rem] capitalize teck">
             MERN Stack Developer
           </p>
-          <p className="my-1 tracking-wide">
+          <p className="tracking-wide">
             A passionate <strong>MERN Stack Developer</strong> with 1 year of
             experience in building dynamic and scalable web applications. I love
             turning ideas into reality using{" "}
@@ -23,7 +23,7 @@ function Hero() {
             something amazing together! 🚀
           </p>
           <a
-            className={`hero-btn capitalize text-[1.2rem] px-[1.5rem] py-[.7rem] mt-2 inline-block rounded-[3pm] cursor-pointer outline-0 border-0`}
+            className={`hero-btn capitalize text-[1.2rem] inline-block rounded-[3pm] cursor-pointer outline-0 border-0`}
             href="mailto:sanaullahsolangi817@gmail.com"
           >
             hire me
@@ -43,12 +43,27 @@ function Hero() {
         {`
           .home-content,
           .home-image {
-            padding-top: 5rem;
+            margin-top: 4rem;
           }
-
           .greetings {
             font-family: jost, sans-serif;
           }
+
+          h1 {
+            margin-top: 1.2rem;
+            margin-bottom: 1.5rem;
+          }
+
+          .home-content > p:nth-of-type(3) {
+            margin-block: 0.5rem;
+          }
+
+          .hero-btn {
+            margin-top: 0.5rem;
+            padding-block: 0.7rem;
+            padding-inline: 1.5rem;
+          }
+
           .home-image img {
             filter: drop-shadow(0 0 1px ${iconBorder});
             -webkit-filter: drop-shadow(0 0 1px ${iconBorder});

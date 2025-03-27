@@ -29,11 +29,12 @@ function Header() {
   ];
 
   return (
-    <div className="header-container max-w-[1470px] fixed top-0 left-[50%] translate-x-[-50%] w-full h-[4rem] z-20">
+    <div className="header-container max-w-[1470px] fixed top-0 left-[50%] translate-x-[-50%] w-full h-[4.5rem] z-20">
       <header
         className={`header-section flex justify-between items-center py-0 px-[5rem] h-full`}
       >
-        <div className="logo" id="logo">
+        {/* LOGO SECTION */}
+        <div className="logo h-full flex items-center" id="logo">
           <a href="#home">
             <img
               className="w-[3rem] h-[3rem]"
@@ -42,6 +43,7 @@ function Header() {
             />
           </a>
         </div>
+        {/* RESPONSIVE ICONS */}
         <div
           onClick={() => setNavbarVisibility(!navbarVisibility)}
           className={`responsive-icons hidden border-2 border-[${borderColor}] cursor-pointer px-1 transition-all duration-75 ease-in-out`}
@@ -52,7 +54,7 @@ function Header() {
             <GiHamburgerMenu className="menu-icon" id="closeIcon" />
           )}
         </div>
-
+        {/* NAVBAR */}
         <nav
           className={`navbar 
              w-auto h-full flex justify-center items-center transition-all duration-[.2s] ease-linear 
@@ -64,7 +66,7 @@ function Header() {
               onClick={() =>
                 nav.handleClick(setNavbarVisibility, navbarVisibility)
               }
-              className={`capitalize h-full w-full  sm:w-full flex justify-center items-center py-0 px-[2rem] text-[1.4rem] sm:text-[1rem] md:text-[1.3rem] font-medium md:px-[1rem]`}
+              className={`capitalize h-full w-full  sm:w-full flex justify-center items-center py-0 text-[1.4rem] sm:text-[1rem] md:text-[1.2rem] font-bold md:px-[1rem]`}
               href={nav.href}
             >
               {nav.text}
@@ -77,6 +79,7 @@ function Header() {
           .header-section {
             background: ${bgColor};
             box-shadow: ${shadowColor};
+            padding-inline: 5rem;
           }
           .menu-icon {
             font-size: 1.8rem;
@@ -84,6 +87,9 @@ function Header() {
 
           .navbar {
             background: ${bgColor};
+          }
+          .navbar > a {
+            padding-inline: 1rem;
           }
 
           .navbar > a:hover {
