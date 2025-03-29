@@ -1,22 +1,19 @@
 import Header from "./components/common/Header";
-import { Button } from "./components/ui/button";
-import About from "./layouts/About";
-import Hero from "./layouts/Hero";
+import About from "./pages/About";
+import Hero from "./pages/Hero";
+import Projects from "./pages/Projects";
+import Services from "./pages/Services";
 
 function App() {
   return (
     <>
       <Header />
-      <div class="main-container max-w-[1470px] ">
+      <div class="main-container">
         <Hero />
         <About />
+        <Services />
+        <Projects />
       </div>
-      <style jsx global>{`
-        .main-container {
-          margin-inline: auto;
-          margin-top: 4rem;
-        }
-      `}</style>
     </>
   );
 }

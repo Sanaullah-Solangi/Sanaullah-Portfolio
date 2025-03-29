@@ -22,22 +22,22 @@ function Header() {
   // Array of navigation items
   const navigations = [
     new NavigationItem("Home", "#home"),
-    new NavigationItem("About", "#About"),
-    new NavigationItem("Services", "#Services"),
-    new NavigationItem("Projects", "#Projects"),
-    new NavigationItem("Contact", "#Contact"),
+    new NavigationItem("About", "#about"),
+    new NavigationItem("Services", "#services"),
+    new NavigationItem("Projects", "#projects"),
+    new NavigationItem("Contact", "#contact"),
   ];
 
   return (
-    <div className="header-container max-w-[1470px] fixed top-0 left-[50%] translate-x-[-50%] w-full h-[4.5rem] z-20">
+    <div className="header-container fixed top-0 left-[50%] translate-x-[-50%] w-full h-[7rem] z-20">
       <header
-        className={`header-section flex justify-between items-center py-0 px-[5rem] h-full`}
+        className={`header-section flex justify-between items-center py-0 h-full`}
       >
         {/* LOGO SECTION */}
         <div className="logo h-full flex items-center" id="logo">
           <a href="#home">
             <img
-              className="w-[3rem] h-[3rem]"
+              className="w-[5rem] h-[5rem]"
               src={logo}
               alt="This is my website logo"
             />
@@ -66,7 +66,7 @@ function Header() {
               onClick={() =>
                 nav.handleClick(setNavbarVisibility, navbarVisibility)
               }
-              className={`capitalize h-full w-full  sm:w-full flex justify-center items-center py-0 text-[1.4rem] sm:text-[1rem] md:text-[1.2rem] font-bold md:px-[1rem]`}
+              className={`capitalize h-full w-full  sm:w-full flex justify-center items-center py-0 text-[1.4rem] sm:text-[1rem] md:text-[2rem] font-[500] md:px-[2rem]`}
               href={nav.href}
             >
               {nav.text}
@@ -79,7 +79,6 @@ function Header() {
           .header-section {
             background: ${bgColor};
             box-shadow: ${shadowColor};
-            padding-inline: 5rem;
           }
           .menu-icon {
             font-size: 1.8rem;
@@ -89,7 +88,8 @@ function Header() {
             background: ${bgColor};
           }
           .navbar > a {
-            padding-inline: 1rem;
+            padding-inline: 2rem;
+            letter-spacing: 0px;
           }
 
           .navbar > a:hover {
@@ -106,14 +106,14 @@ function Header() {
             .navbar {
               position: fixed;
               width: 100%;
-              height: 80vh;
-              top: ${navbarVisibility ? "4rem" : "-900%"};
+              height: 90vh;
+              top: ${navbarVisibility ? "7rem" : "-900%"};
               left: 0;
               flex-direction: column;
               z-index: -1;
             }
             .navbar > a {
-              font-size: 1.2rem !important;
+              font-size: 2rem !important;
               padding-inline: 0.7rem !important;
               font-family: jost, sans-serif;
             }

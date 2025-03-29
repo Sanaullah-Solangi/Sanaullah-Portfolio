@@ -1,4 +1,90 @@
- {/* <a
+<div class="services-container">
+  <!--* first service  -->
+  <div class="service-box">
+    <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+    <h3>Full-Stack Web Development</h3>
+    <p>
+      Build dynamic and interactive web applications using the MERN stack 
+      (MongoDB, Express.js, React.js, Node.js), ensuring seamless frontend 
+      and backend integration for a complete user experience.
+    </p>
+  </div>
+
+  <!--* second service  -->
+  <div class="service-box">
+    <div class="icon"><i class="fa-solid fa-database"></i></div>
+    <h3>RESTful API Development</h3>
+    <p>
+      Design and implement secure, scalable RESTful APIs with Node.js and 
+      Express.js, allowing efficient data exchange between the frontend and 
+      backend while ensuring optimized performance.
+    </p>
+  </div>
+
+  <!--* third service  -->
+  <div class="service-box">
+    <div class="icon"><i class="fa-solid fa-user-shield"></i></div>
+    <h3>User Authentication & Security</h3>
+    <p>
+      Integrate robust authentication systems using JWT and Firebase, 
+      securing user data and enhancing website security with features like 
+      login, registration, and role-based access control.
+    </p>
+  </div>
+
+  <!--* fourth service  -->
+  <div class="service-box">
+    <div class="icon"><i class="fa-solid fa-cloud"></i></div>
+    <h3>Website Deployment & Hosting</h3>
+    <p>
+      Deploy MERN stack applications on cloud platforms like Vercel, Netlify, 
+      Render, or Heroku, ensuring smooth performance and accessibility across 
+      different devices and networks.
+    </p>
+  </div>
+</div>
+
+
+
+
+
+ <div className="skill-set">
+            {/* <!--* first skill  --> */}
+            <div className="html">
+              <p>HTML</p>
+
+              <div className="progress-bar progress-bar-1">
+                <span>90%</span>
+              </div>
+            </div>
+
+            {/* <!--* second skill  --> */}
+            <div className="Css">
+              <p>css</p>
+              <div className="progress-bar progress-bar-2">
+                <span>90%</span>
+              </div>
+            </div>
+
+            {/* <!--* Third skill  --> */}
+            <div className="js">
+              <p>bootstrape</p>
+              <div className="progress-bar progress-bar-3">
+                <span>80%</span>
+              </div>
+            </div>
+
+            {/* <!--* first skill  --> */}
+            <div className="html">
+              <p>Java Script</p>
+              <div className="progress-bar progress-bar-4">
+                <span>70%</span>
+              </div>
+            </div>
+          </div>
+ 
+ {/*
+  <a
             onclick={setIconsVisibility(iconsVisibility ? false : true)}
             className="capitalize h-full sm:h-[50%] sm:w-full flex justify-center items-center py-0 px-[2rem] text-[2rem] sm:text-[2.5rem] md:text-[1.6rem] hover:bg-[#d7d7d7] md:px-[1rem]  "
             href="#home"
@@ -32,4 +118,7 @@
             href="#contact"
           >
             contact
-          </a> */}
+          </a> 
+          */ }
+
+          

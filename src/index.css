@@ -9,9 +9,21 @@
   font-family: jost, sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+.main-container,
+.header-container {
+  max-width: 1470px;
+  margin-inline: auto;
+}
+
+.header-section {
+  padding-inline: 10rem;
+}
 .section {
-  padding-inline: 5rem;
-  padding-bottom: 5rem;
+  padding: 10rem;
 }
 
 .section-heading {
@@ -46,26 +58,59 @@
   width: 80%;
   height: 0.3rem;
 }
+.btn {
+  margin-top: 1rem;
+  padding-block: 0.7rem;
+  padding-inline: 1.5rem;
+}
 
-:is(.home-image, .about-image) img {
+.home-image img {
   width: 25rem;
   height: 25rem;
 }
-@media (width <= 1024px) {
-  .section {
-    margin-bottom: 5rem;
+
+.about-image img {
+  width: 55rem;
+  height: 60rem;
+}
+
+@media (width <= 1167px) {
+  .section,
+  .header-section,
+  #home {
+    padding-inline: 5rem !important;
   }
 }
+@media (width <= 1023px) {
+  :is(.home-image, .about-image) img {
+    width: 55rem;
+    height: 60rem;
+  }
+}
+
 @media (width <= 790px) {
   .section {
-    padding: 0 1.5rem !important;
+    padding-inline: 1.5rem !important;
+  }
+  #home {
+    padding: 15rem 1.5rem !important;
+  }
+  :is(.home-image, .about-image) img {
+    width: 55rem;
+    height: 60rem;
   }
 }
+
+@media (width <= 680px) {
+  h1 {
+    line-height: 6.5rem;
+  }
+}
+
 @media (width <= 500px) {
   :is(.home-image, .about-image) img {
     width: 30rem;
     height: 30rem;
-    height: auto;
   }
 }
 
