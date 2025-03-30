@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
-import { FaCode, FaServer, FaUserCog } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiReact, SiNodedotjs } from "react-icons/si";
+import { FaCode, FaUserCog } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
 import { MdDesignServices } from "react-icons/md";
 import { BsFillShieldLockFill } from "react-icons/bs";
 

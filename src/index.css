@@ -79,6 +79,7 @@ html {
   .header-section,
   #home {
     padding-inline: 5rem !important;
+    
   }
 }
 @media (width <= 1023px) {

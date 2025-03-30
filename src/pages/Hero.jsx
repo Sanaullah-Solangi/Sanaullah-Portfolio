@@ -9,7 +9,7 @@ function Hero() {
         {/* HOME CONTENT */}
         <div className="home-content text-center lg:text-left">
           <p className="greetings text-[1.6rem] capitalize ]">hello it's me</p>
-          <h1 className="font-[500] text-[5rem] my-[1rem]  capitalize">
+          <h1 className={`font-[600] text-[5rem] my-[1rem]  capitalize `}>
             Muhammad Sanaullah
           </h1>
           <p className={`font-[600] text-[1.7rem] capitalize`}>
@@ -49,6 +49,13 @@ function Hero() {
           }
           .greetings {
             font-family: jost, sans-serif;
+          }
+
+          h1 {
+            background: rgb(133, 144, 255);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
           }
 
           .home-content > p:nth-of-type(3) {

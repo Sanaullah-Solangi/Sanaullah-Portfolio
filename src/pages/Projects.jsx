@@ -1,38 +1,50 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import hiStore from "../assets/images/hiStore.jfif";
+import taskApp from "../assets/images/taskApp.png";
+import portfolio from "../assets/images/prevPortfolio.png";
+import appDesign from "../assets/images/appDesign.png";
+import { LuExternalLink } from "react-icons/lu";
+import { FaGithub } from "react-icons/fa";
 function Projects() {
-  const { iconBorder, bgHoverColor } = useContext(ThemeContext);
+  const { iconBorder, bgHoverColor, gradient } = useContext(ThemeContext);
   const Projects = [
     {
-      title: "Full-Stack Web Development",
+      title: "HiStore eCommerce Website",
       description:
-        "Build dynamic and interactive web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js), ensuring seamless frontend and backend integration for a complete user experience.",
-      icon: <FaCode />,
+        "A feature-rich e-commerce platform built with React for the frontend and Node.js for the backend. It includes product listings, user authentication, and a seamless shopping experience. Currently under development with plans to enhance functionality.",
+      image: hiStore,
+      hostedLink: "https://hi-store.vercel.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/HiStore",
     },
     {
-      title: "RESTful API Development",
+      title: "Task Management App",
       description:
-        " Design and implement secure, scalable RESTful APIs with Node.js and Express.js, allowing efficient data exchange between the frontend and backend while ensuring optimized performance.",
-      icon: <SiMongodb />,
+        "A task management app that allows users to add, update, and track tasks using drag-and-drop functionality. Tasks can be categorized into 'To-Do,' 'In Progress,' and 'Completed' lists, with priority levels (Low, Medium, High). Built with pure HTML, CSS, and JavaScript, using Firebase for backend storage.",
+      image: taskApp,
+      hostedLink: "https://manageitnow.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/taskManagementSystem",
     },
     {
-      title: "User Authentication & Security",
+      title: "App Design",
       description:
-        "Integrate robust authentication systems using JWT and Firebase, securing user data and enhancing website security with features like login, registration, and role-based access control.",
-      icon: <BsFillShieldLockFill />,
+        "A simple and clean static website designed during the early stages of learning HTML and CSS. It focuses on layout structuring, styling, and responsiveness, without interactive functionality.",
+      image: appDesign,
+      hostedLink: "https://appdesignwebsite007.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/App-design-Web",
     },
     {
-      title: "Website Deployment & Hosting",
+      title: "Previous Portfolio",
       description:
-        "Deploy MERN stack applications on cloud platforms like Vercel, Netlify, Render, or Heroku, ensuring smooth performance and accessibility across different devices and networks.",
-      icon: <MdDesignProjects />,
-    },
-    {
-      title: "Admin Panel Development",
-      description:
-        "Develop custom admin dashboards using React.js and Node.js, allowing businesses to manage users, products, and analytics efficiently",
-      icon: <FaUserCog />,
+        "My first portfolio website, created after learning JavaScript. It includes basic interactivity, such as a toggle menu in the header, and serves as a record of my early web development progress.",
+      image: portfolio,
+      hostedLink: "https://myfirstportfolio007.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/My-First-Portfolio",
     },
   ];
   const twoColors = {
@@ -40,14 +52,107 @@ function Projects() {
     "100%": "rgb(99, 189, 252)",
   };
   return (
-    <section id="Projects" className="section">
+    <section id="projects" className="section">
       {/* SECTION HEADING */}
       <div className="section-heading">
         <h2 className="heading">My Projects</h2>
       </div>
-      <div className="flex justify-center items-center flex-wrap gap-5 lg:gap-10 "></div>
+      {/* PROJECTS */}
+      <div className="">
+        <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination]}
+          className="mySwiper"
+        >
+          {Projects.map((project) => (
+            <SwiperSlide>
+              <div
+                className={`slide-layer absolute left-0 bottom-[-100%] transition-all duration-150 ease-linear  w-full h-full flex justify-center items-center flex-col gap-2 `}
+                style={{
+                  background:
+                    "linear-gradient(to bottom,rgba(0, 0, 0,0.7) 0.1%,rgb(99, 189, 252) )",
+                }}
+              >
+                <h2 className="text-justify text-white text-[2.3rem] ">
+                  {project.title}
+                </h2>
+                <p className="text-justify text-white  text-[1.7rem] ">
+                  {project.description}
+                </p>
+                <div className="flex gap-5 text-[4rem] cursor-pointer text-white">
+                  <a href={project.hostedLink} target="_blank">
+                    <LuExternalLink />
+                  </a>
+                  <a href={project.gitHub} target="_blank">
+                    <FaGithub />
+                  </a>
+                </div>
+              </div>
+              <img src={project.image} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
       <style jsx global>
-        {``}
+        {`
+          .swiper-wrapper {
+            bakcground: red !important;
+            padding-bottom: 3rem !important;
+          }
+
+          .swiper-slide {
+            width: 450px !important;
+            height: 350px !important;
+            overflow: hidden;
+          }
+
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+
+          .slide-layer {
+            padding: 2rem 4rem;
+          }
+
+          .swiper-slide-active:hover > .slide-layer {
+            bottom: 0% !important;
+          }
+          .slide-layer > p {
+            text-align-last: center;
+          }
+
+          @media (width <= 670px) {
+            .swiper-slide {
+              width: 350px !important;
+              height: 300px !important;
+            }
+          }
+          @media (width <= 530px) {
+            .swiper-slide {
+              width: 250px !important;
+              height: 200px !important;
+            }
+          }
+          @media (width <= 380px) {
+            .swiper-slide {
+              width: 200px !important;
+              height: 150px !important;
+            }
+          }
+        `}
       </style>
     </section>
   );
