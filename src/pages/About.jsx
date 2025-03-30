@@ -65,7 +65,7 @@ function About() {
             href={resume}
             className="btn  font-[500] capitalize text-[1.8rem] inline-block rounded-[3px] cursor-pointer outline-0 border-0"
           >
-            download CV
+            download Resume
           </a>
         </div>
         {/* SKILL SET */}
@@ -120,88 +120,88 @@ function About() {
           }
 
           .html > .ant-progress > .ant-progress-outer > .ant-progress-text {
-            left: ${skills[0].proficiency - 1}% !important;
+            left: ${skills[0].proficiency - 1.5}% !important;
           }
           .css > .ant-progress > .ant-progress-outer > .ant-progress-text {
-            left: ${skills[1].proficiency - 1}% !important;
+            left: ${skills[1].proficiency - 1.5}% !important;
           }
           .bootstrape
             > .ant-progress
             > .ant-progress-outer
             > .ant-progress-text {
-            left: ${skills[2].proficiency - 1}% !important;
+            left: ${skills[2].proficiency - 1.5}% !important;
           }
           .tailwind > .ant-progress > .ant-progress-outer > .ant-progress-text {
-            left: ${skills[3].proficiency - 1}% !important;
+            left: ${skills[3].proficiency - 1.5}% !important;
           }
           .javascript
             > .ant-progress
             > .ant-progress-outer
             > .ant-progress-text {
-            left: ${skills[4].proficiency - 1}% !important;
+            left: ${skills[4].proficiency - 1.5}% !important;
           }
           .react-js > .ant-progress > .ant-progress-outer > .ant-progress-text {
-            left: ${skills[5].proficiency - 1}% !important;
+            left: ${skills[5].proficiency - 1.5}% !important;
           }
           .next-js > .ant-progress > .ant-progress-outer > .ant-progress-text {
-            left: ${skills[6].proficiency - 1}% !important;
+            left: ${skills[6].proficiency - 1.5}% !important;
           }
           .react-native
             > .ant-progress
             > .ant-progress-outer
             > .ant-progress-text {
-            left: ${skills[7].proficiency - 1}% !important;
+            left: ${skills[7].proficiency - 1.5}% !important;
           }
           .node-js > .ant-progress > .ant-progress-outer > .ant-progress-text {
-            left: ${skills[8].proficiency - 1}% !important;
+            left: ${skills[8].proficiency - 1.5}% !important;
           }
           .express-js
             > .ant-progress
             > .ant-progress-outer
             > .ant-progress-text {
-            left: ${skills[9].proficiency - 1}% !important;
+            left: ${skills[9].proficiency - 1.5}% !important;
           }
           .typescript
             > .ant-progress
             > .ant-progress-outer
             > .ant-progress-text {
-            left: ${skills[10].proficiency - 1}% !important;
+            left: ${skills[10].proficiency - 1.5}% !important;
           }
           .git > .ant-progress > .ant-progress-outer > .ant-progress-text {
-            left: ${skills[11].proficiency - 1}% !important;
+            left: ${skills[11].proficiency - 1.5}% !important;
           }
           .git-Hub > .ant-progress > .ant-progress-outer > .ant-progress-text {
-            left: ${skills[12].proficiency - 1}% !important;
+            left: ${skills[12].proficiency - 1.5}% !important;
           }
           .mongo-db > .ant-progress > .ant-progress-outer > .ant-progress-text {
-            left: ${skills[13].proficiency - 1}% !important;
+            left: ${skills[13].proficiency - 1.5}% !important;
           }
           .firebase > .ant-progress > .ant-progress-outer > .ant-progress-text {
-            left: ${skills[14].proficiency - 1}% !important;
+            left: ${skills[14].proficiency - 1.5}% !important;
           }
           .material-UI
             > .ant-progress
             > .ant-progress-outer
             > .ant-progress-text {
-            left: ${skills[15].proficiency - 1}% !important;
+            left: ${skills[15].proficiency - 1.5}% !important;
           }
           .ant-Design
             > .ant-progress
             > .ant-progress-outer
             > .ant-progress-text {
-            left: ${skills[16].proficiency - 1}% !important;
+            left: ${skills[16].proficiency - 1.5}% !important;
           }
           .redux-Tool-Kit
             > .ant-progress
             > .ant-progress-outer
             > .ant-progress-text {
-            left: ${skills[17].proficiency - 1}% !important;
+            left: ${skills[17].proficiency - 1.5}% !important;
           }
           .vercel > .ant-progress > .ant-progress-outer > .ant-progress-text {
-            left: ${skills[18].proficiency - 1}% !important;
+            left: ${skills[18].proficiency - 1.5}% !important;
           }
           .postman > .ant-progress > .ant-progress-outer > .ant-progress-text {
-            left: ${skills[19].proficiency - 1}% !important;
+            left: ${skills[19].proficiency - 1.5}% !important;
           }
           .progress-bar {
             border: 2px solid red;

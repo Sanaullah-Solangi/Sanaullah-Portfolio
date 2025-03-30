@@ -84,13 +84,13 @@ function Projects() {
                     "linear-gradient(to bottom,rgba(0, 0, 0,0.7) 0.1%,rgb(99, 189, 252) )",
                 }}
               >
-                <h2 className="text-justify text-white text-[2.3rem] ">
+                <h2 className="text-center text-white text-[2.3rem] ">
                   {project.title}
                 </h2>
                 <p className="text-justify text-white  text-[1.7rem] ">
                   {project.description}
                 </p>
-                <div className="flex gap-5 text-[4rem] cursor-pointer text-white">
+                <div className="project-links flex gap-5 text-[4rem] cursor-pointer text-white">
                   <a href={project.hostedLink} target="_blank">
                     <LuExternalLink />
                   </a>
@@ -139,11 +139,27 @@ function Projects() {
               width: 350px !important;
               height: 300px !important;
             }
+            .slide-layer h2 {
+              font-size: 1.5rem;
+            }
+            .slide-layer p {
+              font-size: 1.3rem;
+            }
+            .slide-layer .project-links {
+              font-size: 1.9rem;
+            }
           }
           @media (width <= 530px) {
             .swiper-slide {
-              width: 250px !important;
-              height: 200px !important;
+              width: 300px !important;
+              height: 280px !important;
+            }
+            .slide-layer h2 {
+              font-size: 1.5rem;
+            }
+            .slide-layer p,
+            .slide-layer .project-links {
+              font-size: 1.3rem;
             }
           }
           @media (width <= 380px) {
