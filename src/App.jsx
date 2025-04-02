@@ -7,6 +7,10 @@ import Projects from "./pages/Projects";
 import Services from "./pages/Services";
 
 function App() {
+  const aboutSection = document.getElementById("about");
+  window.addEventListener("scroll", (e) => {
+    console.log("about Section =>", aboutSection);
+  });
   return (
     <>
       <Header />

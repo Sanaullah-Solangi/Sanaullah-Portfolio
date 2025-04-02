@@ -9,6 +9,24 @@ import hiStore from "../assets/images/hiStore.jfif";
 import taskApp from "../assets/images/taskApp.png";
 import portfolio from "../assets/images/prevPortfolio.png";
 import appDesign from "../assets/images/appDesign.png";
+import corporate from "../assets/images/corporate.jfif";
+import travel from "../assets/images/travel.jfif";
+import ageCalculater from "../assets/images/agecalculater.jfif";
+import todoApp from "../assets/images/todoapp.jfif";
+import chirismis from "../assets/images/chirismis.jfif";
+import weather from "../assets/images/weather.jfif";
+import country from "../assets/images/country.jfif";
+import house from "../assets/images/house.jfif";
+import calculator from "../assets/images/calculator.jfif";
+import password from "../assets/images/password.jfif";
+import nasa from "../assets/images/nasa.jfif";
+import realstate from "../assets/images/realstate.jfif";
+import gassylinder from "../assets/images/gassylinder.jfif";
+import saylaniform from "../assets/images/saylaniform.jfif";
+import saltnpapper from "../assets/images/saltnpapper.jfif";
+import pockemon from "../assets/images/pockemon.jfif";
+import tereweb from "../assets/images/tereweb.jfif";
+import ajenglishtv from "../assets/images/ajenglishtv.jfif";
 import { LuExternalLink } from "react-icons/lu";
 import { FaGithub } from "react-icons/fa";
 function Projects() {
@@ -31,11 +49,107 @@ function Projects() {
       gitHub: "https://github.com/Sanaullah-Solangi/taskManagementSystem",
     },
     {
+      title: "Age Calculator",
+      description:
+        "An advanced Age Calculator built with JavaScript, utilizing the Date and getTime methods to calculate a user's exact age in years, months, weeks, days, hours, minutes, and seconds. This project enhanced my understanding of date manipulation and time calculations in JavaScript.",
+      image: ageCalculater,
+      hostedLink: "https://myagecalculatorproject.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/age-calculator",
+    },
+    {
+      title: "Todo App (with Firebase)",
+      description:
+        "A feature-rich To-Do app with Firebase integration for authentication and database storage. Users can add, edit, and delete tasks, track progress with status updates, and categorize tasks into 'To-Do,' 'In Progress,' and 'Completed' lists. Secure user authentication ensures personalized task management, making it an efficient productivity tool.",
+      image: todoApp,
+      hostedLink: "https://smittodoapp.netlify.app/main.html",
+      gitHub: "https://github.com/Sanaullah-Solangi/todo-app",
+    },
+    {
+      title: "Calculator",
+      description:
+        "A sleek and visually appealing calculator built with HTML, CSS, and JavaScript. This project offers a smooth user experience with essential arithmetic operations, a responsive design, and interactive buttons. A great demonstration of JavaScript’s event handling and dynamic updates.",
+      image: calculator,
+      hostedLink: "https://mycalculatorassignment.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/calculator",
+    },
+    {
+      title: "Password Generator",
+      description:
+        "A secure and stylish password generator built with HTML, CSS, and JavaScript. It allows users to generate strong passwords with customizable options like length, uppercase/lowercase letters, numbers, and special characters. Features interactive UI and real-time updates for a smooth experience.",
+      image: password,
+      hostedLink: "https://passwordgenerator124.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/password-generator",
+    },
+    {
+      title: "Weather App",
+      description:
+        "A visually appealing weather app built with React, leveraging APIs to fetch real-time weather data. It provides users with detailed weather conditions, including temperature, humidity, and more, in a sleek and user-friendly interface. Designed for both functionality and aesthetics, making weather tracking effortless.",
+      image: weather,
+      hostedLink: "https://weatherapp567.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/weatherApp",
+    },
+    {
+      title: "NASA Clone",
+      description:
+        "A visually appealing NASA website clone built using HTML, CSS, and minimal JavaScript. It features a structured layout, smooth look, and a responsive design for an authentic look.",
+      image: nasa,
+      hostedLink: "https://nasaclone007.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/NASA-Clone",
+    },
+    {
+      title: "Real State",
+      description:
+        "A sleek and modern real estate landing page built with HTML, CSS, and minimal JavaScript. It features a responsive design, smooth animations, and a well-structured layout for an elegant look.",
+      image: realstate,
+      hostedLink: "https://replicarealstate.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/Real-State-Landing-page",
+    },
+    {
+      title: "Gas Cylinder Service",
+      description:
+        "An interactive website designed for a gas cylinder delivery service. This project is developed using HTML, CSS, and JavaScript, featuring a user-friendly interface and a responsive layout.",
+      image: gassylinder,
+      hostedLink: "https://gassylinderservice.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/Gas-Cylinder-Service",
+    },
+    {
+      title: "Saylani Forms",
+      description:
+        "A web-based form submission system developed during the Saylani Mass IT Training Program. This project utilizes HTML, CSS, and JavaScript, ant design,supporting form validation and interactive elements.",
+      image: saylaniform,
+      hostedLink: "https://saylaniformreplica.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/saylani-forms-replica",
+    },
+    {
+      title: "Salt'n Papper Clone",
+      description:
+        "A restaurant landing page inspired by Salt’n Pepper. This project is built using HTML, CSS, and JavaScript, featuring a menu display and a responsive design.",
+      image: saltnpapper,
+      hostedLink: "https://replicasaltnpapper.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/Salt-n-paper",
+    },
+    {
+      title: "Pokémon",
+      description:
+        "An beatiful and good looking website based on the Pokémon theme. This project is developed using HTML, CSS, and JavaScript, featuring stunning elements and an engaging UI.",
+      image: pockemon,
+      hostedLink: "https://replicapokemon.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/pockemon",
+    },
+    {
+      title: "Tere Web",
+      description:
+        "A modern and stylish web page designed using front-end technologies like HTML, CSS, and JavaScript. This project features a responsive and visually appealing design.",
+      image: tereweb,
+      hostedLink: "https://replicatereweb.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/Ride-Sharing",
+    },
+    {
       title: "App Design",
       description:
         "A simple and clean static website designed during the early stages of learning HTML and CSS. It focuses on layout structuring, styling, and responsiveness, without interactive functionality.",
       image: appDesign,
-      hostedLink: "https://appdesignwebsite007.netlify.app/",
+      hostedLink: "https://appdesignwebsite.netlify.app/",
       gitHub: "https://github.com/Sanaullah-Solangi/App-design-Web",
     },
     {
@@ -45,6 +159,54 @@ function Projects() {
       image: portfolio,
       hostedLink: "https://myfirstportfolio007.netlify.app/",
       gitHub: "https://github.com/Sanaullah-Solangi/My-First-Portfolio",
+    },
+    {
+      title: "Corporate Chronicle",
+      description:
+        "A simple news website built with HTML, CSS, and JavaScript, featuring smooth animations for an engaging user experience. The site presents news articles in an organized layout with a responsive design, ensuring accessibility across devices.",
+      image: corporate,
+      hostedLink: "https://corporatechronicle.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/CorporateChronicle",
+    },
+    {
+      title: "Travel Website",
+      description:
+        "A travel website built with HTML, CSS, and JavaScript during my initial remote internship. It features a visually appealing layout, smooth animations, and a responsive design to showcase destinations, travel packages, and essential travel information.",
+      image: travel,
+      hostedLink: "https://travelwebsite00.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/Travel-Website",
+    },
+    {
+      title: "House Website",
+      description:
+        "A real estate website built with HTML, CSS, and JavaScript during a remote internship at TechnoHacks. This project showcases various properties with a visually appealing layout, incorporating basic interactivity to enhance user experience. A great exercise in structuring and styling web pages effectively.",
+      image: house,
+      hostedLink: "https://housewebsite007.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/House-Website",
+    },
+    {
+      title: "Chirismis Gift",
+      description:
+        "A simple yet well-structured website built with HTML, CSS, and basic JavaScript during a remote internship at TechnoHacks. It showcases fundamental web development skills with a clean layout and minimal interactivity, serving as an early step in my learning journey.",
+      image: chirismis,
+      hostedLink: "https://chirismisgift.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/chirismisGift",
+    },
+    {
+      title: "Aj English Tv",
+      description:
+        "A sleek and modern real estate landing page built with HTML, CSS, and minimal JavaScript. It features a responsive design, smooth animations, and a well-structured layout for an elegant look.",
+      image: ajenglishtv,
+      hostedLink: "https://replicatereweb.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/Aaj-english-TV",
+    },
+    {
+      title: "Country Pedia",
+      description:
+        "A beginner-friendly project built with HTML, CSS, and JavaScript, focusing on object manipulation and nested data structures. Users can select a country from a list, dynamically update the provinces dropdown based on the selected country, and display the chosen province. A great learning experience in handling nested objects and arrays in JavaScript.",
+      image: country,
+      hostedLink: "https://mycountrypedia.netlify.app/",
+      gitHub: "https://github.com/Sanaullah-Solangi/CountryPedia",
     },
   ];
   const twoColors = {
