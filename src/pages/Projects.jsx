@@ -1,5 +1,3 @@
-import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -30,7 +28,6 @@ import ajenglishtv from "../assets/images/ajenglishtv.jfif";
 import { LuExternalLink } from "react-icons/lu";
 import { FaGithub } from "react-icons/fa";
 function Projects() {
-  const { iconBorder, bgHoverColor, gradient } = useContext(ThemeContext);
   const Projects = [
     {
       title: "HiStore eCommerce Website",
@@ -209,10 +206,7 @@ function Projects() {
       gitHub: "https://github.com/Sanaullah-Solangi/CountryPedia",
     },
   ];
-  const twoColors = {
-    "0%": "rgb(133, 144, 255)",
-    "100%": "rgb(99, 189, 252)",
-  };
+
   return (
     <section id="projects" className="section">
       {/* SECTION HEADING */}
@@ -269,7 +263,6 @@ function Projects() {
       <style jsx global>
         {`
           .swiper-wrapper {
-            bakcground: red !important;
             padding-bottom: 3rem !important;
           }
 
@@ -325,9 +318,24 @@ function Projects() {
             }
           }
           @media (width <= 380px) {
+            .swiper-wrapper {
+              padding-bottom: 5rem !important;
+            }
             .swiper-slide {
-              width: 200px !important;
-              height: 150px !important;
+              width: 250px !important;
+              height: 200px !important;
+            }
+            .slide-layer {
+              padding: 0rem 1rem;
+              gap: 0.1rem;
+            }
+
+            .slide-layer h2 {
+              font-size: 1.5rem;
+            }
+            .slide-layer p,
+            .slide-layer .project-links {
+              font-size: 1.2rem;
             }
           }
         `}
