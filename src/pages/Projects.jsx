@@ -234,13 +234,13 @@ function Projects() {
           {Projects.map((project) => (
             <SwiperSlide>
               <div
-                className={`slide-layer absolute left-0 bottom-[-100%] transition-all duration-150 ease-linear  w-full h-full flex justify-center items-center flex-col gap-2 `}
+                className={`slide-layer opacity-0 absolute left-0 bottom-[-120%] transition-all duration-150 ease-linear  w-full h-full flex justify-center items-center flex-col gap-2 `}
                 style={{
                   background:
                     "linear-gradient(to bottom,rgba(0, 0, 0,0.7) 0.1%,rgb(99, 189, 252) )",
                 }}
               >
-                <h2 className="text-center text-white text-[2.3rem] ">
+                <h2 className="text-center w-full left-[50%] translate-x-[0%] top-[-10%] text-white text-[2.3rem] ">
                   {project.title}
                 </h2>
                 <p className="text-justify text-white  text-[1.7rem] ">
@@ -271,6 +271,9 @@ function Projects() {
             height: 350px !important;
             overflow: hidden;
           }
+          .swiper-slide-active {
+            overflow: visible;
+          }
 
           .swiper-slide img {
             display: block;
@@ -283,6 +286,7 @@ function Projects() {
           }
 
           .swiper-slide-active:hover > .slide-layer {
+            opacity: 1;
             bottom: 0% !important;
           }
           .slide-layer > p {
@@ -291,8 +295,11 @@ function Projects() {
 
           @media (width <= 670px) {
             .swiper-slide {
-              width: 350px !important;
-              height: 300px !important;
+              width: 300px !important;
+              height: 280px !important;
+            }
+            .slide-layer {
+              padding: 0rem 1rem;
             }
             .slide-layer h2 {
               font-size: 1.5rem;
@@ -323,19 +330,23 @@ function Projects() {
             }
             .swiper-slide {
               width: 250px !important;
-              height: 200px !important;
+              height: 215px !important;
             }
             .slide-layer {
+              justify-content: center;
               padding: 0rem 1rem;
               gap: 0.1rem;
+              bottom: -150% !important;
             }
 
             .slide-layer h2 {
               font-size: 1.5rem;
             }
-            .slide-layer p,
+            .slide-layer p {
+              font-size: 1.3rem;
+            }
             .slide-layer .project-links {
-              font-size: 1.2rem;
+              font-size: 2.5rem;
             }
           }
         `}

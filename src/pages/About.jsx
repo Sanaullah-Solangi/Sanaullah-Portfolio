@@ -38,7 +38,7 @@ function About() {
         <h2 className="heading">about me</h2>
       </div>
       {/* ABOUT CONTENT */}
-      <div className="about-content grid grid-cols-1 lg:grid-cols-2 w-full  gap-5 lg:gap-2">
+      <div className="about-content grid grid-cols-1 lg:grid-cols-2 w-full  gap-5 ">
         <div className="about-image flex flex-col justify-start items-center gap-6">
           <img
             src={aboutImage}
@@ -46,7 +46,7 @@ function About() {
             title="Muhammad SanaUllah"
             loading="lazy"
           />
-          <p className="text-[1.6rem]">
+          <p className="about-desc text-[1.6rem] text-justify">
             Hello! I'm Sanaullah, a passionate MERN Stack Developer with 1 year
             of hands-on experience, gained through training at Saylani Mass IT
             Training (SMIT). I specialize in React.js, Next.js for frontend and
@@ -93,6 +93,9 @@ function About() {
           }
           .about-content > p {
             margin-bottom: 1rem;
+          }
+          .about-desc {
+            text-align-last: center;
           }
           .about-image img {
             filter: drop-shadow(0 0 1px ${iconBorder});

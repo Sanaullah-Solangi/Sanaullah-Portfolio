@@ -61,7 +61,7 @@ function Services() {
             <p className="font-[500] capitalize text-[1.8rem] md:text-[2rem] text-center">
               {serviceObj.title.split("-").join(" ")}
             </p>
-            <p className="text-center text-[1.6rem]">
+            <p className="service-desc text-justify text-[1.6rem]">
               {serviceObj.description}
             </p>
           </div>
@@ -74,6 +74,9 @@ function Services() {
           }
           .service-box:hover {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) !important;
+          }
+          .service-desc {
+            text-align-last: center;
           }
           .icon {
             border: 1px solid ${iconBorder};

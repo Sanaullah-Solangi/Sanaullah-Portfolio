@@ -15,7 +15,7 @@ function Hero() {
           <p className={`font-[600] text-[1.7rem] capitalize`}>
             MERN Stack Developer
           </p>
-          <p className="tracking-wide text-[1.6rem]">
+          <p className="hero-desc tracking-wide text-justify text-[1.6rem]">
             A passionate <i>MERN Stack Developer</i> with 1 year of experience
             in building dynamic and scalable web applications. I love turning
             ideas into reality using <i>React, Node.js, Express, and MongoDB</i>
@@ -58,6 +58,10 @@ function Hero() {
             color: transparent;
           }
 
+          .hero-desc {
+            text-align-last: left;
+          }
+
           .home-content > p:nth-of-type(3) {
             margin-block: 0.5rem;
           }
@@ -70,6 +74,12 @@ function Hero() {
           .btn {
             color: ${bgColor};
             background: ${gradient};
+          }
+
+          @media (width <= 1020px) {
+            .hero-desc {
+              text-align-last: center;
+            }
           }
         `}
       </style>
